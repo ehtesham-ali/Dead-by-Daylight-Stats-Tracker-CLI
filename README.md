@@ -1,7 +1,7 @@
 # Dead-by-Daylight-Stats-Tracker-CLI
 ### Introduction
 
-The DBD Stats Tracker CLI is a small project that enables users to keep track of what killers and survivors they have faced in a simple and convenient manner. This is useful and simple to quickly add how many Trapper's you've faced against, for example. ****The CLI is updated to Dead by Daylight version 5.1.1.**** Features include:
+The DBD Stats Tracker CLI is a small project that enables users to keep track of what killers and survivors they have faced in a simple and convenient manner. This is useful and simple to quickly add how many Trapper's you've faced against, for example. The CLI is updated to Dead by Daylight version 5.1.1. ****Features include:
 
 - A simple and intuitive CLI interface that keeps track of what killers and survivors you have faced
 - Light on system resources, so you can keep on running this in any terminal while waiting for a lobby!
@@ -14,39 +14,55 @@ The DBD Stats Tracker CLI is a small project that enables users to keep track of
 
 Using this CLI is super simple:
 
-First, you need to change the directory of your powershell (or any other terminal) to where the python file "dbd_stats.py" is located. ****(Note that the Python and JSON file MUST be in the same working directory, preferably in a folder with nothing else in it)****
+First, you need to change the directory of your powershell (or any other terminal) to where the python file "dbd_stats.py" is located. (Note that the Python and JSON file MUST be in the same working directory, preferably in a folder with nothing else in it)
 
-- To see stats of a killer/survivor:
+- To see how many times you've killed a survivor:
 
-    `dbd_stats.py show *name of killer/survivor*`
+    `python3 stats.py show killer Nea`
 
-- To see ALL stats:
+- To see how many times you've faced a killer:
 
-    `dbd_stats.py show all`
+    `python3 stats.py show survivor Wraith`
 
-- To change value of a killer/survivor:
+- To see all killer stats:
 
-    `dbd_stats.py edit *name of killer/survivor* --val *integer*`
+    `python3 stats.py show killer all`
 
-    The integer can be a negative number if you made an error (-1 to remove 1, +1 to add 1)
+- To see all survivor stats:
 
-- To change how many rounds this data is accurate to:
+    `python3 stats.py show survivor all`
 
-    `dbd_stats.py edit *name of killer/survivor* --val *integer* --match_number *integer*`
+- To add a value to how many times you've faced a killer:
 
-    The integer can be a negative number if you made an error (-1 to remove 1, +1 to add 1)
+    `python3 stats.py edit survivor Wraith --val +1`
 
-Example addition to database:
+- To add a value to how many times you've hunted a survivor:
 
-Say you faced a Wraith alongside a Nancy, Kate, and Nea in 1 game. This is how you would make an addition to the database:
+    `python3 stats.py edit killer Nea --val +1`
+
+- To add a killer match to make data accurate:
+
+    `python3 stats.py edit killer Nea --val +1 --match_number +1`
+
+### Example addition to database:
+
+Say you faced a Wraith in a game. This is how you would make an addition to the database:
 
 1. First, you would `cd` into the directory where the python file is located
 2. in the terminal, you would write the following statements and hit enter:
-    1. `dbd_stats.py edit Wraith --val +1`
-    2. `dbd_stats.py edit Nancy --val +1`
-    3. `dbd_stats.py edit Kate --val +1`
-    4. `dbd_stats.py edit Nea --val +1 --match_number +1`
-3. To see if the changes have taken place, you would write `dbd_stats.py show all`
+    1. `python3 stats.py edit survivor Wraith --val +1 --match_number +1`
+3. To confirm the changes have taken place, you would write `python3 dbd_stats.py survivor show all`
+
+### Example addition to database (pt. 2):
+
+Say you hunted a Nancy, Kate, and Nea in a game. This is how you would make an addition to the database:
+
+1. First, you would `cd` into the directory where the python file is located
+2. In the terminal, you would write the following statements and hit enter:
+    1. `python3 stats.py edit killer Nancy --val +1`
+    2. `python3 stats.py edit killer Kate --val +1`
+    3. `python3 stats.py edit killer Nea --val +1 --match_number +1`
+3. To confirm the changes have taken place, you would write `python3 stats.py show killer all`
 
 ---
 
