@@ -1,7 +1,7 @@
 # Dead-by-Daylight-Stats-Tracker-CLI
 ### Introduction
 
-The DBD Stats Tracker CLI is a small project that enables users to keep track of what killers and survivors they have faced in a simple and convenient manner. This is useful and simple to quickly add how many Trapper's you've faced against, for example. The CLI is updated to Dead by Daylight version 5.1.1. ****Features include:
+The DBD Stats Tracker CLI is a small project that enables users to keep track of what killers and survivors they have faced in a simple and convenient manner. This is useful and simple to quickly add how many Trapper's you've faced against, for example. The CLI is updated to Dead by Daylight version 5.2.2. ****Features include:
 
 - A simple and intuitive CLI interface that keeps track of what killers and survivors you have faced
 - Light on system resources, so you can keep on running this in any terminal while waiting for a lobby!
