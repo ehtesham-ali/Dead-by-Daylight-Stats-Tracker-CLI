@@ -74,7 +74,7 @@ This project has no dependencies; all libraries are native to python!
 
 ### Future Updates
 
-At this moment no future updates are being considered.
+At this moment no future Quality-of-life updates are being considered, but I will continue to update the JSON files as new chapters are released.
 
 ---
 **[Notion](https://knowing-letter-85f.notion.site/Dead-by-Daylight-Stats-Tracker-CLI-6d4a38bb2825466397b8cfdac06b0ad0) | [Website](https://ali-ehtesham.carrd.co/)**
