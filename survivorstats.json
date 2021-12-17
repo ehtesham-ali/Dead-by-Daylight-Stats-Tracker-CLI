@@ -1,5 +1,5 @@
 {
-  "game_version": "5.2.2",
+  "game_version": "5.4.1",
   "match_number": 0,
   "characters": {
     "Trapper": 0,
@@ -26,6 +26,7 @@
     "Twins": 0,
     "Trickster": 0,
     "Nemesis": 0,
-    "Cenobite": 0
+    "Cenobite": 0,
+    "Artist": 3
   }
 }
