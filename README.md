@@ -6,7 +6,7 @@ The DBD Stats Tracker CLI is a small project that enables users to keep track of
 - A simple and intuitive CLI interface that keeps track of what killers and survivors you have faced
 - Light on system resources, so you can keep on running this in any terminal while waiting for a lobby!
 - Simple commands that are easy to memorize
-- All data is stored into a neat JSON file named "characters.json" if you prefer to manually update it
+- All data is stored into a neat JSON file named "survivorstats.json" and "killerstats.json" if you prefer to manually update it / view it
 
 ---
 
@@ -14,7 +14,7 @@ The DBD Stats Tracker CLI is a small project that enables users to keep track of
 
 Using this CLI is super simple:
 
-First, you need to change the directory of your powershell (or any other terminal) to where the python file "dbd_stats.py" is located. (Note that the Python and JSON file MUST be in the same working directory, preferably in a folder with nothing else in it)
+First, you need to change the directory of your powershell (or any other terminal) to where the python file "dbd_stats.py" is located. (Note that the Python and JSON files MUST be in the same working directory, preferably in a folder with nothing else in it)
 
 - To see how many times you've killed a survivor:
 
